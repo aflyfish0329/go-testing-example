@@ -16,3 +16,8 @@ func (svc ComputeSvc) Reboot() error {
 	// do something
 	return nil
 }
+
+func (svc ComputeSvc) Update() error {
+	// do something
+	return nil
+}
