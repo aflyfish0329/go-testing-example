@@ -10,16 +10,13 @@ type StubComputeSvc struct {
 }
 
 func (stub StubComputeSvc) Start() error {
-	err := stub.StartFunc()
-	return err
+	return stub.StartFunc()
 }
 
 func (stub StubComputeSvc) Stop() error {
-	err := stub.StopFunc()
-	return err
+	return stub.StopFunc()
 }
 
 func (stub StubComputeSvc) Reboot() error {
-	err := stub.RebootFunc()
-	return err
+	return stub.RebootFunc()
 }

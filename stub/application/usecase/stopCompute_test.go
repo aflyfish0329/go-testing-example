@@ -2,7 +2,6 @@ package usecase_test
 
 import (
 	"errors"
-	"fmt"
 	"testing"
 
 	"go-testing-example/stub/application/usecase"
@@ -14,7 +13,6 @@ import (
 func Test_StopComputeUseCase_Succeed(t *testing.T) {
 	stub := service.StubComputeSvc{
 		StopFunc: func() error {
-			fmt.Println("stub stop succeed")
 			return nil
 		},
 	}
@@ -27,7 +25,6 @@ func Test_StopComputeUseCase_Succeed(t *testing.T) {
 func Test_StopComputeUseCase_Failed(t *testing.T) {
 	stub := service.StubComputeSvc{
 		StopFunc: func() error {
-			fmt.Println("stub stop failed")
 			return errors.New("error")
 		},
 	}
